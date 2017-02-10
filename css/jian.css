@@ -7,6 +7,10 @@ i{
     width: 48px;
     height: 48px;
 }
+body{
+width:1200px;
+margin:0 auto;
+}
 s{
     background-color: orange;
     display: block;
