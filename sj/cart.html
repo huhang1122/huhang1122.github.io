@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!--顶部通栏-->
+    <header class="jd_topBar">
+        <a href="" class="icon_back"></a>
+        <h2>购物车</h2>
+        <a href="" class="icon_menu"></a>
+    </header>
+    <!--安全提示-->
+    <div class="anquan">
+        <p>你正在安全购物环境中，请放心购物</p>
+    </div>
+    <!--商品信息-->
+    <div class="gwc">
+        <div class="gwc_top">
+            <div class="check_box">
+                <a href="" class="top_check" check></a>
+            </div>
+            <div class="top_right">
+                <img src="images/buy-logo.png" alt="">
+                <span class="right_name">京东自营</span>
+                <span class="right_ts">您享受满79元免运费服务</span>
+            </div>
+        </div>
+        <div class="gwc_con">
+                <div class="con_check">
+                    <a href="" class="top_check" check></a>
+                </div>
+            <a href="" class="img_box">
+                <img src="images/detail01.jpg" alt="">
+            </a>
+            <!--商品-->
+            <div class="con_box_right">
+                <a href="" class="info_box_name">华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金</a>
+                <p class="info_box_jg"> &yen;999.99</p>
+                <div class="info_box">
+                    <div class="f_left con_num">
+                        <span>-</span>
+                        <input type="tel"/>
+                        <span>+</span>
+                    </div>
+                    <div class="f_right con_delete">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gwc_con">
+            <div class="con_check">
+                <a href="" class="top_check" check></a>
+            </div>
+            <a href="" class="img_box">
+                <img src="images/detail01.jpg" alt="">
+            </a>
+            <!--商品-->
+            <div class="con_box_right">
+                <a href="" class="info_box_name">华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金</a>
+                <p class="info_box_jg"> &yen;999.99</p>
+                <div class="info_box">
+                    <div class="f_left con_num">
+                        <span>-</span>
+                        <input type="tel"/>
+                        <span>+</span>
+                    </div>
+                    <div class="f_right con_delete">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gwc">
+        <div class="gwc_top">
+            <div class="check_box">
+                <a href="" class="top_check"></a>
+            </div>
+            <div class="top_right">
+                <img src="images/buy-logo.png" alt="">
+                <span class="right_name">京东自营</span>
+                <span class="right_ts">您享受满79元免运费服务</span>
+            </div>
+        </div>
+        <div class="gwc_con">
+                <div class="con_check">
+                    <a href="" class="top_check" check></a>
+                </div>
+                <a href="" class="img_box">
+                    <img src="images/detail01.jpg" alt="">
+                </a>
+                <!--商品-->
+                <div class="con_box_right">
+                    <a href="" class="info_box_name">华为（HUAWEI）荣耀平板优享版 Wifi 8英寸平板电脑（高通骁龙 64位四核1280×800 2G/16G 4800mAh）香槟金</a>
+                    <p class="info_box_jg"> &yen;999.99</p>
+                    <div class="info_box">
+                        <div class="f_left con_num">
+                            <span>-</span>
+                            <input type="tel"/>
+                            <span>+</span>
+                        </div>
+                        <div class="f_right con_delete">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+<!--弹出层-->
+    <div class="jd_tcz">
+        <div class="tcz_box">
+            <p class="tcz_top">您确定删除该商品吗？</p>
+            <div class="tcz_bottom">
+                <p class="abolish">取消</p>
+                <p class="submit"> 确认</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var deletes = document.getElementsByClassName("con_delete");
+    var tczbox = document.getElementsByClassName("tcz_box")[0];
+    var jdtcz = document.getElementsByClassName("jd_tcz")[0];
+    var deltesup;
+    console.log(jdtcz);
+    for(var i=0;i<deletes.length;i++){
+        deletes[i].onclick=function(e){
+            console.log(1111);
+            jdtcz.style.display="block";/*显示*/
+            tczbox.className=" tcz_box jump";/*动画*/
+            /*垃圾同翻盖*/
+            deltesup=this.querySelector("span:first-child");
+            console.log(deltesup);
+            /*过渡*/
+            deltesup.style.transition="all 1s";
+            deltesup.style.wekitTransition="all 1s";
+            /*旋转*/
+            deltesup.style.transform="rotate(-30deg) translateY(2px)";
+            deltesup.style.wekitTransform="rotate(-30deg) translateY(2px)";
+            /*旋转基点*/
+            deltesup.style.transformOrigin="left bottom";
+            deltesup.style.wekitTransformOrigin="left bottom";
+        }
+    }
+    document.querySelector(".abolish").onclick=function(){
+        jdtcz.style.display="none";
+        if(deltesup){
+            deltesup.style.transform="none";
+            deltesup.style.wekitTransform="none";
+        }
+    };
+    document.querySelector(".submit").onclick=function(){
+        jdtcz.style.display="none";
+        var gwc=document.getElementsByClassName("gwc");
+        for (var i=0;i<gwc.length;i++){
+            gwc[i].style.transition="all 0.2s";
+            gwc[i].style.opacity=0;
+            setTimeout(function(){
+                for (var j=0;j<gwc.length;j++){
+                    gwc[j].style.opacity=1;
+                }
+            },200);
+        }
+    };
+</script>
