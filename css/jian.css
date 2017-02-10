@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+i{
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+s{
+    background-color: orange;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin: 5px 0;
+}
+.ss{
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.section{
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.tou{
+    position: relative;
+    left: 10px;
+    top:10px;
+    width: 460px;
+    margin: 20px;
+    float: left;
+    z-index: 1111;
+}
+.tou .iii{
+    float: left;
+    width: 128px;
+    height: 128px;
+    background:url("../images/0011.png") no-repeat center center;
+}
+.tou h3{
+
+    font-size: 30px;
+    margin-bottom:10px ;
+}
+.tou span{
+    font-family:"Times New Roman";
+    font-size: 30px;
+}
+.nav ul{
+    margin-left:35%;
+}
+.nav ul li{
+    height: 40px;
+    width: 180px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+    color:red ;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "微软雅黑";
+}
+.nav ul li:hover{
+    border-bottom: 3px solid chartreuse;
+    color: #fff;
+}
+.nav ul li a:hover{
+    color: #fff;
+}
+.te{
+    border-bottom: 3px solid chartreuse;
+    color: #fff;
+}
+.ulbox{
+    display: none;
+    margin-top: 10px;
+    width: 80px;
+    height: 300px;
+    position: absolute;
+    right: 210px;
+    top:30px
+}
+.nav .ulbox li{
+    height: 32px;
+    width: 80px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    line-height: 32px;
+    text-align: center;
+}
+.ulbox a{
+    width: 80px;
+    height: 32px;
+    color: red;
+}
+/*第一屏*/
+.one{
+    background: url("../images/01.jpg")no-repeat center center;
+}
+.one .ziliao{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.one .ziliao p{
+    float: left;
+    width: 130px;
+    height: 160px;
+    text-align: center;
+    border-radius:  50% 50%;
+    background: url("../images/Q1.jpg")no-repeat center center;
+    background-size: 130px 160px;
+}
+.one .ziliao .qiu{
+    width: 300px;
+    float: left;
+    margin-left: 15px;
+}
+.one .ziliao ul li{
+    height: 48px;
+    line-height: 48px;
+    text-align: left;
+    font-family: "微软雅黑";
+    font-size: 20px;
+}
+.one .ziliao i{
+    float: left;
+}
+.one .ziliao .ia{
+    background:url("../images/0001.png") no-repeat center center;
+    background-size: 48px 48px;
+}
+.one .ziliao .ib{
+    background:url("../images/0003.png") no-repeat center center;
+    background-size:24px 24px;
+}
+.one .ziliao .ic{
+    background:url("../images/0002.png") no-repeat center center;
+    background-size: 64px 64px;
+}
+.one .xian{
+    width: 500px;
+    height: 4px;
+    background-color: orange;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+}
+.one .xinxi{
+    width:100%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.one .xinxi i{
+    float: left;
+}
+.one .xinxi li{
+    width: 230px;
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    text-align: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    margin-right:40px;
+}
+.xinxi .id{
+    background:url("../images/0006.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+.xinxi .ie{
+    background:url("../images/0007.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+.xinxi .if{
+    background:url("../images/0005.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+.one .ge{
+    position: absolute;
+    top: 70%;
+}
+.one .ge .ji{
+    margin-left: 520px;
+    width: 100%;
+}
+.one .ge .ji li span:nth-child(odd){
+    float: left;
+    margin: 0 30px 30px  0;
+}
+.one .ge b{
+    color: #010103;
+    font-size: 20px;
+}
+.one .ge .ji li{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.one .ge .geren{
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+}
+.one .ge .ig{
+    width: 74px;
+    height: 74px;
+    background:url("../images/0009.png") no-repeat center center;
+    background-size: 74px 74px;
+    float: left;
+    margin-right: 16px;
+}
+.one .ge h3{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    margin-bottom:8px ;
+}
+.one .ge p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+.one .ge .xiana{
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 112px;
+    background-color:orange;
+}
+
+/*第2屏*/
+.two{
+    background-size:contain;
+    background: url("../images/02.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.two .jinengbox{
+    position: absolute;
+    top:17%;
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+.jinengbox .ih{
+    width: 96px;
+    height: 96px;
+    background:url("../images/0012.png") no-repeat center center;
+    float: left;
+    margin-right: 16px;
+}
+.jinengbox h3{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    margin-bottom:8px ;
+}
+.jinengbox p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+.jinengbox .jineng{
+    position: absolute;
+    left: 130%;
+    top: -90px;
+    margin-top: 50px;
+    width: 600px;
+}
+.jineng ul li{
+    font-size: 18px;
+    font-family: "微软雅黑";
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.jineng ul li span{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+.jineng .shu{
+    float: left;
+    height: 190px;
+    width: 4px;
+    background-color: orange;
+    margin-right: 50px;
+}
+.two .gongzuobox{
+    position: absolute;
+    top:44%;
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+.gongzuobox .ii{
+    width: 96px;
+    height: 96px;
+    background:url("../images/0013.png") no-repeat center center;
+    float: left;
+    margin-right: 16px;
+}
+.gongzuobox h3{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    margin-bottom:8px ;
+}
+.gongzuobox p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+.gongzuobox .gongzuo{
+    position: absolute;
+    left: 130%;
+    top: -50px;
+    margin-top: 50px;
+    width: 600px;
+}
+.gongzuo .shu{
+    float: left;
+    height: 111px;
+    width: 4px;
+    background-color: orange;
+    margin-right: 50px;
+}
+.gongzuo ul{
+    margin-top: 20px;
+    width: 900px;
+}
+.gongzuo ul li{
+    width: 200px;
+    float:left;
+}
+.gongzuo .gongzuoxian{
+    position: absolute;
+    top:50px;
+    left: 70px;
+    height: 3px;
+    width:400px;
+    background-color: orange;
+}
+.gongzuo .gongzuoxianx{
+    position: absolute;
+    top:48px;
+    left: 471px;
+    height: 3px;
+    width:185px;
+    border-bottom: 3px dashed red;
+    /*background-color: red;*/
+}
+
+.two .reirong{
+    width:220px;
+    position: absolute;
+    top:62%;
+    margin-left: 20px;
+    float: left;
+}
+.reirong .ij{
+    width: 60px;
+    height: 60px;
+    background:url("../images/0014.png") no-repeat center center;
+    background-size: 60px 60px;
+    float: left;
+    margin-right: 16px;
+}
+.reirong h3{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    margin-bottom:8px ;
+}
+.reirong p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+.reirong ul{
+    margin-top: 10px;
+    width: 500px;
+}
+.reirong ul li{
+    font-family: "微软雅黑";
+    margin-top: 10px;
+    font-size: 16px;
+}
+.two .xiangmu{
+    width: 700px;
+    position: absolute;
+    top:62%;
+    left: 40%;
+    float: left;
+    margin-left: 20px;
+}
+.xiangmu .ik{
+    width: 60px;
+    height: 60px;
+    background:url("../images/0015.png") no-repeat center center;
+    background-size: 60px 60px;
+    float: left;
+    margin-right: 16px;
+}
+.xiangmu h3{
+    font-family: "微软雅黑";
+    font-size: 24px;
+    margin-bottom:8px ;
+}
+.xiangmu p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+.xiangmu ul{
+    margin-top: 10px;
+}
+.xiangmu ul li{
+    font-family: "微软雅黑";
+    margin-top: 10px;
+    font-size: 18px;
+}
+.xiangmu ul span{
+    font-family: "微软雅黑";
+    font-size: 18px;
+    font-weight: 700;
+}
+.xiangmu .xxx{
+    float: left;
+    width: 4px;
+    height: 280px;
+    margin-right: 40px;
+    background-color: orange;
+}
+
+/*第3屏*/
+.three{
+    background: url("../images/03.jpg") center center;
+}
+.three .ziping{
+    width: 700px;
+    position: absolute;
+    top: 20%;
+    float: left;
+    margin-left: 20px;
+}
+.ziping .iq{
+    width: 96px;
+    height: 96px;
+    background:url("../images/0016.png") no-repeat center center;
+    background-size: 96px 96px;
+    float: left;
+    margin-right: 16px;
+}
+.ziping h3{
+     font-family: "微软雅黑";
+     font-size: 24px;
+     margin-bottom:8px ;
+ }
+.ziping p{
+    font-family:"Footlight MT Light";
+    font-size: 30px;
+}
+
+.zipingbox{
+    width: 900px;
+    float: left;
+    position: absolute;
+    top: 20%;
+    left: 300px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    font-weight: 600;
+    line-height: 28px;
+    margin-left: 50px;
+}
+.zpshu{
+    position: absolute;
+    top: 20%;
+    left: 300px;
+    float: left;
+    height: 111px;
+    width: 4px;
+    background-color: orange;
+}
+.lianxi{
+    width: 800px;
+    position: absolute;
+    top: 44%;
+    left: 500px;
+}
+.lianxi .at{
+    width: 128px;
+    height: 128px;
+    background:url("../images/0017.png") no-repeat center center;
+    float: left;
+    margin-right: 16px;
+}
+.lianxi .m{
+    margin-top: 35px;
+    width: 72px;
+    height: 72px;
+    background:url("../images/0018.png") no-repeat center center;
+    background-size: 72px 72px;
+    float: left;
+}
+.lianxi .e{
+    margin-top: 35px;
+    width: 72px;
+    height: 72px;
+    background:url("../images/0019.png") no-repeat center center;
+    background-size: 72px 72px;
+    float: left;
+    margin-right: 16px;
+}
+.atme{
+    position:absolute;
+    top: 63%;
+    left: 310px;
+}
+.atme li{
+    width: 300px;
+    margin-right: 30px;
+    float: left;
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    color: orange;
+    font-family: "微软雅黑";
+}
+.atme .iy{
+    float: left;
+    background:url("../images/0007.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+.atme .iz{
+    float: left;
+    background:url("../images/0005.png") no-repeat center center;
+    background-size: 24px 24px;
+}
+.thank{
+    width: 290px;
+    height:60px;
+    border: 5px solid orange;
+    position: absolute;
+    top: 80%;
+    left: 36%;
+    font-size:48px;
+    font-family: "Times New Roman";
+    color: orange;
+    text-align: center;
+    line-height: 60px;
+}
