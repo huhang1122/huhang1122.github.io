@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    position: relative;
+    overflow: hidden;
+}
+/*第1屏*/
+.section .logo{
+    height: 251px;
+    background: url("images1/logo.png") no-repeat center center;
+    margin-top: 50px;
+}
+.section .txt{
+    margin: 100px 0;
+    text-align: center;
+}
+.section .txt img{
+    opacity: 0.2;
+    margin: 0 34px;
+}
+.one .info{
+    background: url("images1/info_1.png")no-repeat center center;
+    height:49px ;
+}
+/*动画1*/
+.te .txt img{
+    opacity: 1;
+    margin: 0;
+    transition: all 1s ease-in-out;
+}
+
+/*第2屏*/
+.er>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dun{
+    width: 428px;
+    height: 498px;;
+}
+.er .info{
+    width: 635px;
+    height: 309px;
+    background: url("images1/info_2.png") no-repeat center center;
+}
+.dun img/*:nth-child(1)*/{
+     transform: translate(300px ,400px) rotateX(180deg);
+ }
+/*.dun img:nth-child(2){
+    transform: translate(300px ,400px) rotateX(180deg);
+}
+.dun img:nth-child(3){
+    transform: translate(300px ,400px) rotateX(180deg);
+}
+.dun img:nth-child(4){
+    transform: translate(200px ,410px) rotateX(100deg);
+}
+.dun img:nth-child(5){
+    transform: translate(700px ,400px) rotateX(140deg);
+}*/
+/*第2屏动画*/
+.te .dun img{
+    transform: translate(0 ,0) rotateX(0);
+    transition: all 1s ease-in-out;
+}
+
+/*第3屏*/
+.therr{
+
+}
+.three>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.three .info{
+    width: 631px;
+    height: 278px;
+    background: url("images1/info_3.png");
+}
+.three .yuan{
+    width: 453px;
+    height: 449px;
+    background: url("images1/circle.png");
+}
+.three .huo{
+    position: absolute;
+    width: 203px;
+    height: 204px;
+    background: url("images1/rocket.png");
+    transform: translate(-200px,450px);
+}
+/*动画3*/
+.te.three .huo{
+    transform: translate(380px,-10px);
+    transition: all 1s ease-in-out;
+}
+/*第4屏*/
+.four{
+
+}
+.four>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.four .zuo{
+    width: 529px;
+    height: 299px;
+    position: relative;
+}
+.zuo .input{
+    position: absolute;
+    left: 0;
+    top: -12px;
+    background: url("images1/search.png");
+    width: 529px;
+    height: 66px;
+    transform: translateX(-120%);
+}
+.zuo .zi{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    width: 0;
+    /*width: 99px;*/
+    height: 22px;
+    background: url("images1/key.png");
+}
+.zuo .wrap{
+    position: absolute;
+    top:39px;
+    width: 529px;
+    height: 372px;
+    overflow: hidden;
+}
+.wrap .sou{
+    height: 100%;
+    width: 100%;
+    background: url("images1/result.png");
+    transform: translateY(-100%);
+}
+.four .info{
+    width: 612px;
+    height: 299px;
+    background: url("images1/info_4.png");
+}
+/*动画4*/
+.te .zuo .input{
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+.te .zuo .zi{
+    animation: zizi 1.5s steps(5) 1.3s forwards;
+}
+@keyframes zizi {
+    form{
+
+    }
+    to{
+        width: 99px;
+    }
+}
+.te .wrap .sou{
+    transform: translateY(0);
+    transition: all 1s 3s ease-in-out;
+}
+/*第5屏*/
+.five{}
+.five>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.five .info{
+    background: url("images1/info_5.png");
+    width: 1077px;
+    height: 134px;
+    margin: 30px 0;
+}
+.five .liu{
+    width: 1004px;
+    flex: 1;
+    background:rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+.leftsoil,.rightsoil,.topsoil,.bottomsoil{
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+
+}
+.leftsoil ,.rightsoil{
+    width: 1px;
+    height: 100%;
+
+}
+.topsoil , .bottomsoil{
+    width: 100%;
+    height: 1px;
+}
+.leftsoil{
+    left: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.rightsoil{
+    right: 0;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.topsoil{
+    top:0;
+    transform: translateX(100%);
+    opacity: 0;
+}
+.bottomsoil{
+    bottom: 0;
+}
+ .five .toolbar {
+    width: 100%;
+    height: 79px;
+    background: url("images1/toolbar.png");
+     opacity: 0;
+}
+.five .toolbarsoil{
+    /*width: 920px;*/
+    width: 0;
+    height: 28px;
+    position: absolute;
+    top:30px;
+    left: 71px;
+    overflow: hidden;
+}
+.toolbarsoil span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 3px;
+}
+.five .gong{
+    width:394px ;
+    height: 29px;
+    background: url("images1/extra.png") ;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+}
+.liu .bottom{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom:30px;
+    background-color:rgba(255,255,255,0.5) ;
+}
+/*动画5*/
+.te .leftsoil{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+.te .topsoil{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease-in-out 0.5s;
+}
+.te .rightsoil{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out 0.5s;
+}
+.te.five .toolbar,
+.te.five .gong {
+    opacity: 1;
+    transition: all 1s ease-in-out 1.5s;
+}
+.te.five .toolbarsoil{
+    width: 920px;
+    transition: all 1s ease-in-out 1.5s;
+}
+
+

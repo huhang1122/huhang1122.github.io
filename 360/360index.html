@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="360.css">
+</head>
+<body>
+<div id="fullpage">
+    <div class="section one">
+        <div class="logo"></div>
+        <div class="txt">
+            <img src="./images1/text_1.png" alt="">
+            <img src="./images1/text_2.png" alt="">
+            <img src="./images1/text_3.png" alt="">
+            <img src="./images1/text_4.png" alt="">
+            <img src="./images1/text_5.png" alt="">
+            <img src="./images1/text_6.png" alt="">
+            <img src="./images1/text_7.png" alt="">
+            <img src="./images1/text_8.png" alt="">
+        </div>
+        <div class="info"></div>
+    </div>
+    <!--第2屏-->
+    <div class="section er">
+        <div class="dun">
+            <img src="images1/shield_1.png" alt="">
+            <img src="images1/shield_2.png" alt="">
+            <img src="images1/shield_3.png" alt="">
+            <img src="images1/shield_4.png" alt="">
+            <img src="images1/shield_5.png" alt="">
+            <img src="images1/shield_6.png" alt="">
+            <img src="images1/shield_7.png" alt="">
+            <img src="images1/shield_8.png" alt="">
+            <img src="images1/shield_9.png" alt="">
+        </div>
+        <div class="info"></div>
+    </div>
+    <!--第3屏-->
+    <div class="section three">
+        <div class="info"></div>
+        <div class="yuan"></div>
+        <div class="huo"></div>
+    </div>
+    <!--第4屏-->
+    <div class="section four">
+        <div class="zuo">
+            <div class="zi"></div>
+            <div class="input"></div>
+            <div class="wrap">
+                <div class="sou"></div>
+            </div>
+        </div>
+        <div class="info"></div>
+    </div>
+    <!--第5屏-->
+    <div class="section five">
+        <div class="info"></div>
+        <div class="liu">
+            <div class="leftsoil"></div>
+            <div class="topsoil"></div>
+            <div class="rightsoil"></div>
+            <div class="bottomsoil"></div>
+            <div class="toolbar"></div>
+            <div class="toolbarsoil">
+                <span></span>
+            </div>
+            <div class="bottom"></div>
+            <div class="gong"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.fullPage.min.js"></script>
+<script>
+    $("#fullpage").fullpage( {
+        sectionsColor:['#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6'],/*颜色*/
+       afterLoad: function (anchorLink, index){
+           $(".section").removeClass("te");
+           /*$('.section').removeClass('current');*/
+           setTimeout(function(){
+              $(".section").eq(index-1).addClass("te")
+           },100)
+        }
+    });
+</script>
