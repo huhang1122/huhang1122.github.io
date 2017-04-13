@@ -337,20 +337,26 @@ ul{
     width: 200px;
     float:left;
 }
+.gongzuo ul li h4{
+    font-size: 12px;
+}
+.gongzuo ul li h5{
+    font-size: 10px;
+}
 .gongzuo .gongzuoxian{
     position: absolute;
-    top:50px;
+     top:47px;
     left: 70px;
     height: 3px;
-    width:400px;
+    width:440px;
     background-color: orange;
 }
 .gongzuo .gongzuoxianx{
     position: absolute;
-    top:48px;
-    left: 471px;
+    top:44px;
+    left: 520px;
     height: 3px;
-    width:185px;
+    width:136px;
     border-bottom: 3px dashed red;
     /*background-color: red;*/
 }
