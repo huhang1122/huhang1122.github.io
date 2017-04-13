@@ -118,7 +118,7 @@ ul{
     height: 160px;
     text-align: center;
     border-radius:  50% 50%;
-    background: url("../images/Q1.jpg")no-repeat center center;
+/*     background: url("../images/Q1.jpg")no-repeat center center; */
     background-size: 130px 160px;
 }
 .one .ziliao .qiu{
